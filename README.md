@@ -2,7 +2,7 @@ longpolling_room
 ================
 
 這是一個實作 Long polling 機制的 web 程式
-沒有多餘不相干的功能，純粹唯一的 comet programming 基本範例
+沒有多餘不相干的功能，純粹的 comet programming 基本範例
 
 Long polling 的介紹可參考維基百科
 
