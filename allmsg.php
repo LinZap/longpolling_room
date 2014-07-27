@@ -21,7 +21,7 @@ if($result){
 
 
  while($row = mysql_fetch_array($result)){
-       echo "<div><h3>".$row[1]."：　</h3>".$row[2]."</div>";
+       echo "<div><h3>".$row[2]."：　</h3>".$row[1]."</div>";
  }
  
 }

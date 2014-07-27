@@ -139,7 +139,7 @@
 		    if(e.which == 13) 
 		    	if($('#inmsg').val()!=""){
 		    	var a = $('#inmsg').val();
-		    	$('#inmsg').prop('disabled', true);	
+		    	$('#inmsg').attr('disabled', '');	
 		      	sendmsg(a);
 		    }
 		});
@@ -153,9 +153,9 @@
 				data: {content: msgg},
 			})
 			.done(function(data) {
-				console.log(data);		
+				console.log("SEND MSG OK",data);		
 				if(data.split(',')[0]=='success') 
-					$('#inmsg').prop('disabled', false).val("").focus();
+					$('#inmsg').removeAttr('disabled').val("").focus();
 			})
 			.fail(function() {
 				$('#send').hide();
@@ -171,8 +171,7 @@
 			// load all of msgs
 			printallmsg();
 
-			// ask the new
-			lonpolling();
+			
 
 		}
 
@@ -187,9 +186,11 @@
 				data: {},
 			})
 			.done(function(data) {
-				console.log(data);
+				console.log("Long polling",data);
 				if(data!="") {
+
 					$('#msgbox').append(data);
+
 					var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 					$body.scrollTop($body[0].scrollHeight);
 					
@@ -224,7 +225,7 @@
 			})
 			.done(function(data) {
 
-				console.log(data);
+				console.log("ALL",data);
 
 				$('#msgbox').html(data);
 				var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
@@ -232,7 +233,8 @@
 
 				// stupid
 				//setTimeout(function(){ printallmsg(); }, 1000);
-
+				// ask the new
+				lonpolling();
 			})
 			.fail(function() {
 				$('#msgbox').prepend('<div>系統發生問題，請重試...</div>');

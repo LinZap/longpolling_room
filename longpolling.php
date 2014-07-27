@@ -11,7 +11,7 @@ $user = $_SESSION['user'];
 session_write_close();
 
 
-for($i=0;$i<10;$i++){
+for($i=0;$i<30;$i++){
 
 	// 0 or 1
 	if( isnew($user)=='1' ){
@@ -19,8 +19,7 @@ for($i=0;$i<10;$i++){
 		// select db
 		// update isnew =0 and time=now()
 		// 子查詢 
-		$sql = "select  send,content  from msg 
-		where time >(select time from notify where name='".$user."')";
+		$sql = "select send,content  from msg where time >(select time from notify where name='".$user."')";
 
 	
 		$result = mysql_query($sql) or die('error1');
