@@ -36,4 +36,4 @@ Long polling 的介紹可參考維基百科
 1. 本程式全部由 php 撰寫
 2. 資料庫使用 MySQL 5.4
 3. 後端Server位於 ueuo.com
-4. Live Demo : http://zaplin.ueuo.com/index.php
+4. Live Demo : http://210.70.167.98/longpolling_room/
