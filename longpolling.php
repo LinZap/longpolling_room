@@ -46,8 +46,9 @@ for($i=0;$i<30;$i++){
 
 
 	// wait 1 sec
-	sleep(1);
-
+	//sleep(1);
+	// 0.5 s
+	usleep(500000);
 }
 
 
