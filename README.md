@@ -43,7 +43,7 @@ Long polling 的介紹可參考維基百科
     
     PRIMARY KEY  (id)  
     
-    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=73 ;  
+    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;  
 
 * * *
   
@@ -67,7 +67,7 @@ Long polling 的介紹可參考維基百科
     
     PRIMARY KEY  (uid)  
     
-    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;
 
 ================
 
