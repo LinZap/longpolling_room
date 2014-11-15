@@ -1,9 +1,9 @@
 <?
 
-    $dbhost = 'localhost';
-    $dbuser = 'zap';
-    $dbpass = '123';
-    $dbname = 'LongPollingRoom';
+    $dbhost = 'zap.comze.com';
+    $dbuser = 'a1842796_zap';
+    $dbpass = 'zxcvbnm123';
+    $dbname = 'a1842796_onlyone';
 
     $conn = mysql_connect($dbhost, $dbuser, $dbpass) or die('Error with MySQL connection');
     
