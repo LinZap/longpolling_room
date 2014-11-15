@@ -24,10 +24,50 @@ Long polling 的介紹可參考維基百科
 
 本系統的資料庫架構十分簡易，資料表與欄位如下
 
+### Schema 介紹
 1. user (uid,name) 儲存使用者基本資料
 2. msg (id,content,send,time) 儲存使用者傳送的訊息
 3. notify (name,isnews,time) 記錄使用者抓取資料的最後時間，藉由存取該資料表，判斷是否有新資料，藉此撈取該訊息
 
+### 建立資料庫 SQL 語法
+
+    CREATE TABLE msg (  
+    
+    id int(11) NOT NULL auto_increment,  
+    
+    content varchar(500) default NULL,  
+    
+    send varchar(50) NOT NULL,  
+    
+    time datetime NOT NULL,  
+    
+    PRIMARY KEY  (id)  
+    
+    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=73 ;  
+
+* * *
+  
+    CREATE TABLE notify (  
+ 
+    name varchar(50) NOT NULL,  
+    
+    isnews tinyint(4) NOT NULL,  
+    
+    time datetime NOT NULL  
+    
+    ) ENGINE=MyISAM DEFAULT CHARSET=utf8;  
+    
+* * *
+  
+    CREATE TABLE user (  
+  
+    uid int(11) NOT NULL auto_increment,  
+    
+    name varchar(50) NOT NULL,  
+    
+    PRIMARY KEY  (uid)  
+    
+    ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
 ================
 
