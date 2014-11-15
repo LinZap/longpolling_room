@@ -74,3 +74,20 @@ Long polling 的介紹可參考這篇[詳細介紹](http://josephj.com/entry.php
 2. 資料庫使用 MySQL 5.4
 3. 後端Server位於 ueuo.com
 4. Live Demo : http://zap.comze.com/longpolling_room/
+
+
+## License
+
+   Copyright 2014 LinZap
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
