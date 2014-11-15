@@ -4,7 +4,7 @@ longpolling_room
 這是一個實作 Long polling 機制的 web 程式
 沒有多餘不相干的功能，純粹的 comet programming 基本範例
 
-Long polling 的介紹可參考維基百科
+Long polling 的介紹可參考這篇[詳細介紹](http://josephj.com/entry.php?id=358)
 
 
 ## 程式介紹
