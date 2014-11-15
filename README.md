@@ -6,7 +6,6 @@ longpolling_room
 
 Long polling 的介紹可參考維基百科
 
-================
 
 ## 程式介紹
 
@@ -18,7 +17,6 @@ Long polling 的介紹可參考維基百科
 6.	sendmsg.php  使用者藉這隻程式，將訊息傳送出去，並保存於資料庫
 7.	signin.php   使用者第一次需要先登入(只要求輸入姓名)
 
-================
 
 ## 資料庫 架構介紹
 
@@ -69,7 +67,6 @@ Long polling 的介紹可參考維基百科
     
     ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;
 
-================
 
 ## 架構 與 Demo
 
